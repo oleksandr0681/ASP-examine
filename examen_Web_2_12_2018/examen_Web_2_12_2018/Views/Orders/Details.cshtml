@@ -1,0 +1,114 @@
+﻿@model examen_Web_2_12_2018.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Avto_o.Name_avto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Avto_o.Name_avto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Client_o.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client_o.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTime_order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime_order)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State_Order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State_Order)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Passengers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Passengers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Close_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Close_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Receive_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Receive_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Idle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beginning_execution_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beginning_execution_time)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

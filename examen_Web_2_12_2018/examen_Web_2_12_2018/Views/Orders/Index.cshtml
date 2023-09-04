@@ -1,0 +1,99 @@
+﻿@model IEnumerable<examen_Web_2_12_2018.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Avto_o.Name_avto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Client_o.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateTime_order)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State_Order)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Passengers)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Close_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Receive_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Idle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Beginning_execution_time)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Avto_o.Name_avto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client_o.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateTime_order)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State_Order)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Place)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Passengers)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Close_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Receive_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Idle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Beginning_execution_time)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

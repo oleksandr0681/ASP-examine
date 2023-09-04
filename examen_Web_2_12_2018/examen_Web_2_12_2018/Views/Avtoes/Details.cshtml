@@ -1,0 +1,69 @@
+﻿@model examen_Web_2_12_2018.Models.Avto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Avto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name_avto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name_avto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone_driver)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone_driver)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.state)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.state)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Seats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Seats)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<div>
+    Список выполненных заказов
+    <ul>
+        @foreach (var item in ViewBag.Orders_accomplished)
+        {
+            <li>@item</li>
+        }
+
+    </ul>
+</div>
